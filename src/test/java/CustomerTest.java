@@ -18,8 +18,8 @@ public class CustomerTest {
     public void ShouldBeEqualForOneRent(){
         a.addRental(rental);
         String source = "Rental Record for Jakub\n" +
-                "\tCosmic Oddysey:2001\t1.5\n" +
-                "Amount owed is 3.5\n" +
+                "\tCosmic Oddysey:2001\t3.0\n" +
+                "Amount owed is 3.0\n" +
                 "You earned 1 frequent renter points";
         Assert.assertEquals(source, a.statement());
     }
@@ -31,8 +31,8 @@ public class CustomerTest {
 
         String source2 = "Rental Record for Sylwia\n" +
                 "\tMatrix Incarnation\t6.0\n" +
-                "\tCosmic Oddysey:2001\t1.5\n" +
-                "Amount owed is 9.5\n" +
+                "\tCosmic Oddysey:2001\t3.0\n" +
+                "Amount owed is 9.0\n" +
                 "You earned 3 frequent renter points";
 
         Assert.assertEquals(source2, b.statement());
@@ -45,13 +45,12 @@ public class CustomerTest {
         c.addRental(rental2);
 
         String source3 = "Rental Record for Paulina\n" +
-                "\tCosmic Oddysey:2001\t1.5\n" +
+                "\tCosmic Oddysey:2001\t3.0\n" +
                 "\tMatrix Incarnation\t6.0\n" +
-                "\tRattatouille\t3.0\n" +
-                "Amount owed is 12.5\n" +
+                "\tRattatouille\t2.0\n" +
+                "Amount owed is 11.0\n" +
                 "You earned 4 frequent renter points";
 
         Assert.assertEquals(source3, c.statement());
     }
-
 }
