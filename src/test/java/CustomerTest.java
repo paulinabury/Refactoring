@@ -15,7 +15,7 @@ public class CustomerTest {
     Rental rental2 = new Rental(rattatouille, 4);
 
     @Test
-    public void ShouldBeEqualForOneRent(){
+    public void ShouldBeEqualForOneRent() {
         a.addRental(rental);
         String source = "Rental Record for Jakub\n" +
                 "\tCosmic Oddysey:2001\t3.5\n" +
@@ -25,7 +25,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void ShouldBeEqualForTwoRents(){
+    public void ShouldBeEqualForTwoRents() {
         b.addRental(rental1);
         b.addRental(rental);
 
@@ -39,7 +39,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void ShouldBeEqualForThreeRents(){
+    public void ShouldBeEqualForThreeRents() {
         c.addRental(rental);
         c.addRental(rental1);
         c.addRental(rental2);

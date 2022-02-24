@@ -6,7 +6,7 @@ public class Movie {
     private String _title;
     private int _priceCode;
 
-    public Movie(String title, int priceCode){
+    public Movie(String title, int priceCode) {
         _title = title;
         _priceCode = priceCode;
     }
@@ -14,7 +14,8 @@ public class Movie {
     public int getPriceCode() {
         return _priceCode;
     }
-    public String getTitle(){
+
+    public String getTitle() {
         return _title;
     }
 }
