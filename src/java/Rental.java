@@ -1,5 +1,3 @@
-package com.bury.General;
-
 public class Rental {
     private Movie _movie;
     private int _daysRented;
