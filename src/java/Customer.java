@@ -24,7 +24,7 @@ public class Customer {
         while (rentals.hasMoreElements()) {
             double thisAmount = 0;
             Rental each = (Rental) rentals.nextElement();
-            thisAmount = anomutFor(each);
+            thisAmount = amountFor(each);
 
             //add frequent renter points
             frequentRenterPoints ++;
@@ -43,8 +43,8 @@ public class Customer {
         return result;
     }
 
-    private int anomutFor(Rental each){
-        int thisAmount = 0;
+    private double amountFor(Rental each){
+        double thisAmount = 0;
         switch (each.getMovie().getPriceCode()) {
             case Movie.REGULAR:
                 thisAmount += 2;
